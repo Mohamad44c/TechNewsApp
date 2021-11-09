@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_articles.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_webview.xml" value="0.335" />
       </map>
     </option>
   </component>

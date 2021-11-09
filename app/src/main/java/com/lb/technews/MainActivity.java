@@ -41,19 +41,19 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+//       once the user clicks start the Arraylist of API Keys will be passed to the next activity
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent easyIntent = new Intent(MainActivity.this, Articles.class);
+                Intent articleIntent = new Intent(MainActivity.this, Articles.class);
 //                Passing list of data (urls and app names)
-                easyIntent.putExtra("keysActual", (Serializable) keysActual);
-                startActivity(easyIntent);
+                articleIntent.putExtra("keysActual", (Serializable) keysActual);
+                startActivity(articleIntent);
             }
         });
     }
 
-
+//    reading from the website and extracting the API Keys using .split function and stores the results into a arraylist
     public class DownloadTask extends AsyncTask<String, Void, String> {
 
         protected String doInBackground(String... urls) {
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
                 for (int i = 0; i < 21; i++) {
                     keysActual.add(keys[i]);
-                    System.out.println("Key number: " + i + " " + keysActual.get(i));
+//                    System.out.println("Key number: " + i + " " + keysActual.get(i));
                 }
 //                result returns the api keys we need to get the articles
                 return result;
