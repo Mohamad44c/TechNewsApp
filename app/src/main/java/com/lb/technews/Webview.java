@@ -20,10 +20,4 @@ public class Webview extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(url);
     }
-
-
-//    WebView webView = (WebView) findViewById(R.id.webview);
-//                        webView.getSettings().setJavaScriptEnabled(true);
-//                        webView.setWebViewClient(new WebViewClient());
-//                        webView.loadUrl(a_url);
 }

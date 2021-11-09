@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         });
     }
 
-//    reading from the website and extracting the API Keys using .split function and stores the results into a arraylist
+    //    reading from the website and extracting the API Keys using .split function and stores the results into a arraylist
     public class DownloadTask extends AsyncTask<String, Void, String> {
 
         protected String doInBackground(String... urls) {

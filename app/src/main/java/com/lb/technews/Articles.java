@@ -9,8 +9,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -67,7 +65,7 @@ public class Articles extends AppCompatActivity {
 //                Log.i("Article URL", c.getString(article_url_index));
 //                c.moveToNext();
 //            }
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 //////////////////////////////////////////////////////////////////////////////////////////////
