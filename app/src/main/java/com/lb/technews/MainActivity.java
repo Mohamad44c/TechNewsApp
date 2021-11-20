@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                     result += current;
                     data = reader.read();
                 }
-                System.out.println("RESULT " + result);
+//                System.out.println("RESULT " + result);
                 keys = result.split(",");
 
                 for (int i = 0; i < 21; i++) {
